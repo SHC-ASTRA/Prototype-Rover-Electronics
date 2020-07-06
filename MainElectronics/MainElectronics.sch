@@ -36,7 +36,7 @@ F 3 "" H 6700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L MainElectronics-rescue:+BATT-power #PWR?
 U 1 1 5ED83A12
 P 15750 2350
 F 0 "#PWR?" H 15750 2200 50  0001 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 15750 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-BATT #PWR?
+L MainElectronics-rescue:-BATT-power #PWR?
 U 1 1 5ED83D2D
 P 15750 2750
 F 0 "#PWR?" H 15750 2600 50  0001 C CNN
@@ -58,7 +58,7 @@ F 3 "" H 15750 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Battery BT?
+L MainElectronics-rescue:Battery-Device BT?
 U 1 1 5ED842D7
 P 16550 2550
 F 0 "BT?" H 16658 2596 50  0000 L CNN
@@ -69,7 +69,7 @@ F 3 "~" V 16550 2610 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST SW?
+L MainElectronics-rescue:SW_SPST-Switch SW?
 U 1 1 5ED8AA7B
 P 16350 2350
 F 0 "SW?" H 16300 2450 50  0000 C CNN
@@ -77,28 +77,6 @@ F 1 "SW_E_STOP" H 16650 2450 50  0000 C CNN
 F 2 "" H 16350 2350 50  0001 C CNN
 F 3 "~" H 16350 2350 50  0001 C CNN
 	1    16350 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L MainElectronicsLib:RFM95W_Adafruit_Breakout U?
-U 1 1 5ED8CB9C
-P 12300 8100
-F 0 "U?" H 12275 8765 50  0000 C CNN
-F 1 "RFM95W_Adafruit_Breakout" H 12275 8674 50  0000 C CNN
-F 2 "" H 12300 8100 50  0001 C CNN
-F 3 "" H 12300 8100 50  0001 C CNN
-	1    12300 8100
-	1    0    0    -1  
-$EndComp
-$Comp
-L MainElectronicsLib:BNO055_Adafruit_Breakout U?
-U 1 1 5EDC2630
-P 9000 10400
-F 0 "U?" H 9000 10915 50  0000 C CNN
-F 1 "BNO055_Adafruit_Breakout" H 9000 10824 50  0000 C CNN
-F 2 "" H 9000 10200 50  0001 C CNN
-F 3 "" H 9000 10200 50  0001 C CNN
-	1    9000 10400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -146,7 +124,7 @@ F 3 "" H 10300 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L MainElectronics-rescue:Conn_01x02-Connector_Generic J?
 U 1 1 5EDED200
 P 15000 2700
 F 0 "J?" H 14918 2375 50  0000 C CNN
@@ -175,7 +153,7 @@ Wire Wire Line
 	16550 2750 15750 2750
 Connection ~ 15750 2750
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EDF08DE
 P 3650 1950
 F 0 "#PWR?" H 3650 1800 50  0001 C CNN
@@ -186,7 +164,7 @@ F 3 "" H 3650 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF0FA5
 P 1850 4050
 F 0 "#PWR?" H 1850 3800 50  0001 C CNN
@@ -209,7 +187,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2850 3650 2850
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF699C
 P 3650 3650
 F 0 "#PWR?" H 3650 3400 50  0001 C CNN
@@ -231,7 +209,7 @@ Connection ~ 3400 1950
 Wire Wire Line
 	3400 1950 3650 1950
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF91C0
 P 5700 3100
 F 0 "#PWR?" H 5700 2850 50  0001 C CNN
@@ -256,8 +234,9 @@ Connection ~ 5700 2950
 Wire Wire Line
 	5700 2950 5700 3100
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDFB035
+<<<<<<< Updated upstream
 P 8550 2150
 F 0 "#PWR?" H 8550 1900 50  0001 C CNN
 F 1 "GND" H 8555 1977 50  0000 C CNN
@@ -270,8 +249,20 @@ Wire Wire Line
 	9750 2100 8550 2100
 Wire Wire Line
 	8550 2100 8550 2150
+=======
+P 9400 1950
+F 0 "#PWR?" H 9400 1700 50  0001 C CNN
+F 1 "GND" H 9405 1777 50  0000 C CNN
+F 2 "" H 9400 1950 50  0001 C CNN
+F 3 "" H 9400 1950 50  0001 C CNN
+	1    9400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 1850 9400 1850
+>>>>>>> Stashed changes
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDFCC74
 P 11300 2250
 F 0 "#PWR?" H 11300 2000 50  0001 C CNN
@@ -286,7 +277,7 @@ Wire Wire Line
 Wire Wire Line
 	11300 2200 11300 2250
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EDFEE13
 P 9850 3900
 F 0 "#PWR?" H 9850 3750 50  0001 C CNN
@@ -305,7 +296,7 @@ Wire Wire Line
 NoConn ~ 2150 2750
 NoConn ~ 2150 1950
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE01C66
 P 10300 3950
 F 0 "#PWR?" H 10300 3700 50  0001 C CNN
@@ -318,7 +309,7 @@ $EndComp
 Wire Wire Line
 	10300 3950 10300 3600
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EE02A6B
 P 11300 2100
 F 0 "#PWR?" H 11300 1950 50  0001 C CNN
@@ -355,7 +346,7 @@ Wire Wire Line
 	1850 2350 2150 2350
 Connection ~ 1850 3150
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EE0825C
 P 8700 6150
 F 0 "#PWR?" H 8700 6000 50  0001 C CNN
@@ -368,7 +359,7 @@ $EndComp
 Wire Wire Line
 	8950 6150 8700 6150
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE095A7
 P 10000 6250
 F 0 "#PWR?" H 10000 6000 50  0001 C CNN
@@ -381,7 +372,7 @@ $EndComp
 Wire Wire Line
 	9650 6250 10000 6250
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE0A592
 P 11450 6000
 F 0 "#PWR?" H 11450 5850 50  0001 C CNN
@@ -392,7 +383,7 @@ F 3 "" H 11450 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE0B0E9
 P 11650 5600
 F 0 "#PWR?" H 11650 5350 50  0001 C CNN
@@ -418,7 +409,7 @@ Wire Wire Line
 Wire Wire Line
 	11450 6000 11850 6000
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE0E4CC
 P 11500 7700
 F 0 "#PWR?" H 11500 7550 50  0001 C CNN
@@ -431,20 +422,20 @@ $EndComp
 Wire Wire Line
 	11800 7700 11500 7700
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE0F934
-P 11500 7800
-F 0 "#PWR?" H 11500 7550 50  0001 C CNN
-F 1 "GND" H 11505 7627 50  0000 C CNN
-F 2 "" H 11500 7800 50  0001 C CNN
-F 3 "" H 11500 7800 50  0001 C CNN
-	1    11500 7800
+P 11100 7600
+F 0 "#PWR?" H 11100 7350 50  0001 C CNN
+F 1 "GND" H 11105 7427 50  0000 C CNN
+F 2 "" H 11100 7600 50  0001 C CNN
+F 3 "" H 11100 7600 50  0001 C CNN
+	1    11100 7600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11500 7800 11800 7800
+	11100 7600 11400 7600
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE10B59
 P 8500 8200
 F 0 "#PWR?" H 8500 8050 50  0001 C CNN
@@ -455,7 +446,7 @@ F 3 "" H 8500 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE113B3
 P 8750 8000
 F 0 "#PWR?" H 8750 7750 50  0001 C CNN
@@ -476,7 +467,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 8300 8900 8300
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE14000
 P 8300 10150
 F 0 "#PWR?" H 8300 10000 50  0001 C CNN
@@ -489,18 +480,16 @@ $EndComp
 Wire Wire Line
 	8300 10150 8650 10150
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE15824
-P 8300 10350
-F 0 "#PWR?" H 8300 10100 50  0001 C CNN
-F 1 "GND" H 8305 10177 50  0000 C CNN
-F 2 "" H 8300 10350 50  0001 C CNN
-F 3 "" H 8300 10350 50  0001 C CNN
-	1    8300 10350
+P 7700 10350
+F 0 "#PWR?" H 7700 10100 50  0001 C CNN
+F 1 "GND" H 7705 10177 50  0000 C CNN
+F 2 "" H 7700 10350 50  0001 C CNN
+F 3 "" H 7700 10350 50  0001 C CNN
+	1    7700 10350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8650 10350 8300 10350
 Wire Wire Line
 	11850 6100 11450 6100
 Wire Wire Line
@@ -525,25 +514,72 @@ Text Label 8500 8400 2    50   ~ 0
 SAM-M8Q_SDA
 Text Label 8500 8500 2    50   ~ 0
 SAM-M8Q_SCL
-Text Label 11050 2900 0    50   ~ 0
-SAM-M8Q_SDA
-Text Label 11050 2800 0    50   ~ 0
-SAM-M8Q_SCL
-Wire Wire Line
-	11050 2800 10850 2800
-Wire Wire Line
-	11050 2900 10850 2900
 NoConn ~ 11850 6300
 NoConn ~ 8950 6250
 Wire Wire Line
 	9650 6150 10000 6150
 Text Label 10000 6150 0    50   ~ 0
 NEOPIXEL_DIN
+$Comp
+L MainElectronicsLib:RFM95W_Adafruit_Breakout U?
+U 1 1 5ED8CB9C
+P 12300 8100
+F 0 "U?" H 12275 8765 50  0000 C CNN
+F 1 "RFM95W_Adafruit_Breakout" H 12275 8674 50  0000 C CNN
+F 2 "" H 12300 8100 50  0001 C CNN
+F 3 "" H 12300 8100 50  0001 C CNN
+	1    12300 8100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10850 3000 11050 3000
+	11600 8100 11800 8100
+Wire Wire Line
+	11600 8200 11800 8200
+Wire Wire Line
+	11600 8300 11800 8300
+Text Label 11600 8100 2    50   ~ 0
+RFM95W_SP_Clock
+Text Label 11600 8200 2    50   ~ 0
+RFM9W_MISO
+Text Label 11600 8300 2    50   ~ 0
+RFM95W_MOSI
+Wire Wire Line
+	10850 3400 11050 3400
+Wire Wire Line
+	9750 3400 9550 3400
+Wire Wire Line
+	9550 3300 9750 3300
+Text Label 11050 3400 0    50   ~ 0
+RFM95W_Clock
+Text Label 9550 3400 2    50   ~ 0
+RFM95W_MISO
+Text Label 9550 3300 2    50   ~ 0
+RFM95W_MOSI
+$Comp
+L MainElectronicsLib:BNO055_Adafruit_Breakout U?
+U 1 1 5EDC2630
+P 9000 10400
+F 0 "U?" H 9000 10915 50  0000 C CNN
+F 1 "BNO055_Adafruit_Breakout" H 9000 10824 50  0000 C CNN
+F 2 "" H 9000 10200 50  0001 C CNN
+F 3 "" H 9000 10200 50  0001 C CNN
+	1    9000 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 10450 8650 10450
+Wire Wire Line
+	8400 10550 8650 10550
+Text Label 8400 10450 2    50   ~ 0
+BNO055_SDA
+Text Label 8400 10550 2    50   ~ 0
+BNO055_SCL
+Wire Wire Line
+	7700 10350 8650 10350
 Text Label 11050 3000 0    50   ~ 0
 NEOPIXEL_DIN
 Wire Wire Line
+<<<<<<< Updated upstream
 	9750 2200 9450 2200
 Wire Wire Line
 	9750 2300 9450 2300
@@ -667,4 +703,81 @@ Wire Wire Line
 	9450 2400 9750 2400
 Wire Wire Line
 	9450 2500 9750 2500
+=======
+	10850 3000 11050 3000
+Wire Wire Line
+	10850 2900 12000 2900
+Wire Wire Line
+	12000 3000 12000 2900
+Connection ~ 12000 2900
+Wire Wire Line
+	12000 2900 12350 2900
+Wire Wire Line
+	12000 3000 12350 3000
+Text Label 12350 2900 0    50   ~ 0
+SAM-M8Q_SDA
+Text Label 12350 3000 0    50   ~ 0
+BNO055_SDA
+Wire Wire Line
+	10850 2800 12000 2800
+Wire Wire Line
+	12350 2700 12000 2700
+Wire Wire Line
+	12000 2700 12000 2800
+Text Label 12350 2800 0    50   ~ 0
+SAM-M8Q_SCL
+Wire Wire Line
+	12000 2800 12350 2800
+Connection ~ 12000 2800
+Text Label 12350 2700 0    50   ~ 0
+BNO055_SCL
+Wire Wire Line
+	11600 8400 11800 8400
+Wire Wire Line
+	11600 8500 11800 8500
+Text Label 11600 8400 2    50   ~ 0
+RFM95W_CS
+Text Label 11600 8500 2    50   ~ 0
+RFM95W_RST
+Wire Wire Line
+	9550 2400 9750 2400
+Wire Wire Line
+	9550 2500 9750 2500
+Text Label 9550 2400 2    50   ~ 0
+RFM95W_RST
+Wire Wire Line
+	9750 1850 9750 2100
+Wire Wire Line
+	9400 1850 9400 1950
+Wire Wire Line
+	8400 10650 8650 10650
+Text Label 8400 10650 2    50   ~ 0
+BNO055_RST
+Text Label 9550 2500 2    50   ~ 0
+BNO055_RST
+Wire Wire Line
+	11400 7800 11400 7600
+Wire Wire Line
+	11800 7800 11400 7800
+Wire Wire Line
+	11600 7900 11800 7900
+Text Label 11600 7900 2    50   ~ 0
+RFM95W_EN
+Wire Wire Line
+	11600 8000 11800 8000
+Wire Wire Line
+	9550 2600 9750 2600
+Wire Wire Line
+	9550 2700 9750 2700
+Text Label 9550 2600 2    50   ~ 0
+RFM95W_EN
+Text Label 9550 2700 2    50   ~ 0
+RFM95W_G0
+Text Label 11600 8000 2    50   ~ 0
+RFM95W_G0
+Wire Wire Line
+	9550 3200 9750 3200
+Text Label 9550 3200 2    50   ~ 0
+RFM95W_CS
+>>>>>>> Stashed changes
 $EndSCHEMATC
