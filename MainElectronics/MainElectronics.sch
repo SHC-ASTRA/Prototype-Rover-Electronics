@@ -506,29 +506,25 @@ Wire Wire Line
 Wire Wire Line
 	11850 6200 11450 6200
 Text Label 11450 6100 2    50   ~ 0
-OpenLog_TX
+Teensy_RX5
 Text Label 11450 6200 2    50   ~ 0
-OpenLog_RX
+Teensy_TX5
 Text Label 11050 2600 0    50   ~ 0
-OpenLog_TX
+Teensy_RX5
 Wire Wire Line
 	11050 2600 10850 2600
 Wire Wire Line
 	10850 2700 11050 2700
 Text Label 11050 2700 0    50   ~ 0
-OpenLog_RX
+Teensy_TX5
 Wire Wire Line
 	8900 8400 8500 8400
 Wire Wire Line
 	8900 8500 8500 8500
-Text Label 8500 8400 2    50   ~ 0
-SAM-M8Q_SDA
-Text Label 8500 8500 2    50   ~ 0
-SAM-M8Q_SCL
 Text Label 11050 2900 0    50   ~ 0
-SAM-M8Q_SDA
+Teensy_SDA0
 Text Label 11050 2800 0    50   ~ 0
-SAM-M8Q_SCL
+Teensy_SCL0
 Wire Wire Line
 	11050 2800 10850 2800
 Wire Wire Line
@@ -667,4 +663,8 @@ Wire Wire Line
 	9450 2400 9750 2400
 Wire Wire Line
 	9450 2500 9750 2500
+Text Label 8500 8500 2    50   ~ 0
+Teensy_SCL0
+Text Label 8500 8400 2    50   ~ 0
+Teensy_SDA0
 $EndSCHEMATC
