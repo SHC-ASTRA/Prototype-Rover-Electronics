@@ -1,30 +1,70 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
+# MainElectronics-rescue_+3V3-power
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+DEF MainElectronics-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "MainElectronics-rescue_+3V3-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
 DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_Antenna
+# MainElectronics-rescue_+5V-power
 #
-DEF Device_Antenna AE 0 40 N N 1 F N
+DEF MainElectronics-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "MainElectronics-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_+BATT-power
+#
+DEF MainElectronics-rescue_+BATT-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "MainElectronics-rescue_+BATT-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_-BATT-power
+#
+DEF MainElectronics-rescue_-BATT-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "MainElectronics-rescue_-BATT-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 0 100 N
+P 4 0 1 0 30 50 -30 50 0 100 30 50 F
+X -BATT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_Antenna-Device
+#
+DEF MainElectronics-rescue_Antenna-Device AE 0 40 N N 1 F N
 F0 "AE" -75 75 50 H V R CNN
-F1 "Device_Antenna" -75 0 50 H V R CNN
+F1 "MainElectronics-rescue_Antenna-Device" -75 0 50 H V R CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -34,11 +74,11 @@ X A 1 0 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Device_Battery
+# MainElectronics-rescue_Battery-Device
 #
-DEF Device_Battery BT 0 0 N N 1 F N
+DEF MainElectronics-rescue_Battery-Device BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device_Battery" 100 0 50 H V L CNN
+F1 "MainElectronics-rescue_Battery-Device" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -59,11 +99,43 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Q_NMOS_DGS
+# MainElectronics-rescue_Conn_01x02-Connector_Generic
 #
-DEF Device_Q_NMOS_DGS Q 0 0 Y N 1 F N
+DEF MainElectronics-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "MainElectronics-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_GND-power
+#
+DEF MainElectronics-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "MainElectronics-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_Q_NMOS_DGS-Device
+#
+DEF MainElectronics-rescue_Q_NMOS_DGS-Device Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_NMOS_DGS" 200 -50 50 H V L CNN
+F1 "MainElectronics-rescue_Q_NMOS_DGS-Device" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -87,11 +159,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# MainElectronics-rescue_R-Device
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF MainElectronics-rescue_R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "MainElectronics-rescue_R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -101,6 +173,22 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MainElectronics-rescue_SW_SPST-Switch
+#
+DEF MainElectronics-rescue_SW_SPST-Switch SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "MainElectronics-rescue_SW_SPST-Switch" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -123,6 +211,28 @@ X RST 6 -350 -250 100 R 50 50 1 1 I
 X ADR 7 350 -150 100 L 50 50 1 1 I
 X INT 8 350 -50 100 L 50 50 1 1 O
 X PS1 9 350 50 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# MainElectronicsLib_MAX14870_Breakout
+#
+DEF MainElectronicsLib_MAX14870_Breakout U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "MainElectronicsLib_MAX14870_Breakout" 0 550 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 500 250 -100 0 1 0 f
+X PWM 1 -350 400 100 R 50 50 1 1 I
+X VM 10 350 400 100 L 50 50 1 1 I
+X DIR 2 -350 300 100 R 50 50 1 1 I
+X ~FAULT 3 -350 200 100 R 50 50 1 1 O
+X ~EN 4 -350 100 100 R 50 50 1 1 I
+X GND 5 -350 0 100 R 50 50 1 1 W
+X GND 6 350 0 100 L 50 50 1 1 W
+X VIN 7 350 100 100 L 50 50 1 1 W
+X M2 8 350 200 100 L 50 50 1 1 w
+X M1 9 350 300 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
@@ -324,92 +434,25 @@ X P7 9 -550 -150 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPST
+# MainElectronicsLib_Teensy_4.0_Backside
 #
-DEF Switch_SW_SPST SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF MainElectronicsLib_Teensy_4.0_Backside U 0 40 Y Y 1 F N
+F0 "U" 0 -350 50 H V C CNN
+F1 "MainElectronicsLib_Teensy_4.0_Backside" 0 350 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
 DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+3V3
-#
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+BATT
-#
-DEF power_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_-BATT
-#
-DEF power_-BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_-BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 0 0 0 100 N
-P 4 0 1 0 30 50 -30 50 0 100 30 50 F
-X -BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
+S -250 300 250 -300 0 1 0 f
+X P24 1 -350 200 100 R 50 50 1 1 B
+X P25 10 350 200 100 L 50 50 1 1 B
+X P26 2 -350 100 100 R 50 50 1 1 B
+X P28 3 -350 0 100 R 50 50 1 1 B
+X P30 4 -350 -100 100 R 50 50 1 1 B
+X P32 5 -350 -200 100 R 50 50 1 1 B
+X P33 6 350 -200 100 L 50 50 1 1 B
+X P31 7 350 -100 100 L 50 50 1 1 B
+X P29 8 350 0 100 L 50 50 1 1 B
+X P27 9 350 100 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

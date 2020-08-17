@@ -36,47 +36,47 @@ F 3 "" H 6700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L MainElectronics-rescue:+BATT-power #PWR?
 U 1 1 5ED83A12
-P 15750 2350
-F 0 "#PWR?" H 15750 2200 50  0001 C CNN
-F 1 "+BATT" H 15700 2500 50  0000 C CNN
-F 2 "" H 15750 2350 50  0001 C CNN
-F 3 "" H 15750 2350 50  0001 C CNN
-	1    15750 2350
+P 16950 2300
+F 0 "#PWR?" H 16950 2150 50  0001 C CNN
+F 1 "+BATT" H 16900 2450 50  0000 C CNN
+F 2 "" H 16950 2300 50  0001 C CNN
+F 3 "" H 16950 2300 50  0001 C CNN
+	1    16950 2300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-BATT #PWR?
+L MainElectronics-rescue:-BATT-power #PWR?
 U 1 1 5ED83D2D
-P 15750 2750
-F 0 "#PWR?" H 15750 2600 50  0001 C CNN
-F 1 "-BATT" H 15765 2923 50  0000 C CNN
-F 2 "" H 15750 2750 50  0001 C CNN
-F 3 "" H 15750 2750 50  0001 C CNN
-	1    15750 2750
+P 16950 2700
+F 0 "#PWR?" H 16950 2550 50  0001 C CNN
+F 1 "-BATT" H 16965 2873 50  0000 C CNN
+F 2 "" H 16950 2700 50  0001 C CNN
+F 3 "" H 16950 2700 50  0001 C CNN
+	1    16950 2700
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Battery BT?
+L MainElectronics-rescue:Battery-Device BT?
 U 1 1 5ED842D7
-P 16550 2550
-F 0 "BT?" H 16658 2596 50  0000 L CNN
-F 1 "Battery" H 16658 2505 50  0000 L CNN
-F 2 "" V 16550 2610 50  0001 C CNN
-F 3 "~" V 16550 2610 50  0001 C CNN
-	1    16550 2550
+P 17750 2500
+F 0 "BT?" H 17858 2546 50  0000 L CNN
+F 1 "Battery" H 17858 2455 50  0000 L CNN
+F 2 "" V 17750 2560 50  0001 C CNN
+F 3 "~" V 17750 2560 50  0001 C CNN
+	1    17750 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST SW?
+L MainElectronics-rescue:SW_SPST-Switch SW?
 U 1 1 5ED8AA7B
-P 16350 2350
-F 0 "SW?" H 16300 2450 50  0000 C CNN
-F 1 "SW_E_STOP" H 16650 2450 50  0000 C CNN
-F 2 "" H 16350 2350 50  0001 C CNN
-F 3 "~" H 16350 2350 50  0001 C CNN
-	1    16350 2350
+P 17550 2300
+F 0 "SW?" H 17500 2400 50  0000 C CNN
+F 1 "SW_E_STOP" H 17850 2400 50  0000 C CNN
+F 2 "" H 17550 2300 50  0001 C CNN
+F 3 "~" H 17550 2300 50  0001 C CNN
+	1    17550 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -146,36 +146,36 @@ F 3 "" H 10300 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L MainElectronics-rescue:Conn_01x02-Connector_Generic J?
 U 1 1 5EDED200
-P 15000 2700
-F 0 "J?" H 14918 2375 50  0000 C CNN
-F 1 "Jetson_DC_In" H 14918 2466 50  0000 C CNN
-F 2 "" H 15000 2700 50  0001 C CNN
-F 3 "~" H 15000 2700 50  0001 C CNN
-	1    15000 2700
+P 16200 2650
+F 0 "J?" H 16118 2325 50  0000 C CNN
+F 1 "Jetson_DC_In" H 16118 2416 50  0000 C CNN
+F 2 "" H 16200 2650 50  0001 C CNN
+F 3 "~" H 16200 2650 50  0001 C CNN
+	1    16200 2650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	15600 2350 15600 2600
+	16800 2300 16800 2550
 Wire Wire Line
-	15600 2600 15200 2600
+	16800 2550 16400 2550
 Wire Wire Line
-	15200 2700 15600 2700
+	16400 2650 16800 2650
 Wire Wire Line
-	15600 2700 15600 2750
+	16800 2650 16800 2700
 Wire Wire Line
-	15600 2750 15750 2750
+	16800 2700 16950 2700
 Wire Wire Line
-	15750 2350 15600 2350
+	16950 2300 16800 2300
 Wire Wire Line
-	16150 2350 15750 2350
-Connection ~ 15750 2350
+	17350 2300 16950 2300
+Connection ~ 16950 2300
 Wire Wire Line
-	16550 2750 15750 2750
-Connection ~ 15750 2750
+	17750 2700 16950 2700
+Connection ~ 16950 2700
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EDF08DE
 P 3650 1950
 F 0 "#PWR?" H 3650 1800 50  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "" H 3650 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF0FA5
 P 1850 4050
 F 0 "#PWR?" H 1850 3800 50  0001 C CNN
@@ -209,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2850 3650 2850
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF699C
 P 3650 3650
 F 0 "#PWR?" H 3650 3400 50  0001 C CNN
@@ -231,7 +231,7 @@ Connection ~ 3400 1950
 Wire Wire Line
 	3400 1950 3650 1950
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDF91C0
 P 5700 3100
 F 0 "#PWR?" H 5700 2850 50  0001 C CNN
@@ -256,7 +256,7 @@ Connection ~ 5700 2950
 Wire Wire Line
 	5700 2950 5700 3100
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EDFB035
 P 8550 2150
 F 0 "#PWR?" H 8550 1900 50  0001 C CNN
@@ -271,22 +271,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 2100 8550 2150
 $Comp
-L power:GND #PWR?
-U 1 1 5EDFCC74
-P 11300 2250
-F 0 "#PWR?" H 11300 2000 50  0001 C CNN
-F 1 "GND" H 11305 2077 50  0000 C CNN
-F 2 "" H 11300 2250 50  0001 C CNN
-F 3 "" H 11300 2250 50  0001 C CNN
-	1    11300 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10850 2200 11300 2200
-Wire Wire Line
-	11300 2200 11300 2250
-$Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EDFEE13
 P 9850 3900
 F 0 "#PWR?" H 9850 3750 50  0001 C CNN
@@ -305,7 +290,7 @@ Wire Wire Line
 NoConn ~ 2150 2750
 NoConn ~ 2150 1950
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE01C66
 P 10300 3950
 F 0 "#PWR?" H 10300 3700 50  0001 C CNN
@@ -318,18 +303,16 @@ $EndComp
 Wire Wire Line
 	10300 3950 10300 3600
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EE02A6B
-P 11300 2100
-F 0 "#PWR?" H 11300 1950 50  0001 C CNN
-F 1 "+5V" H 11315 2273 50  0000 C CNN
-F 2 "" H 11300 2100 50  0001 C CNN
-F 3 "" H 11300 2100 50  0001 C CNN
-	1    11300 2100
+P 12150 2100
+F 0 "#PWR?" H 12150 1950 50  0001 C CNN
+F 1 "+5V" H 12165 2273 50  0000 C CNN
+F 2 "" H 12150 2100 50  0001 C CNN
+F 3 "" H 12150 2100 50  0001 C CNN
+	1    12150 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11300 2100 10850 2100
 Wire Wire Line
 	3350 3350 3650 3350
 Wire Wire Line
@@ -355,7 +338,7 @@ Wire Wire Line
 	1850 2350 2150 2350
 Connection ~ 1850 3150
 $Comp
-L power:+5V #PWR?
+L MainElectronics-rescue:+5V-power #PWR?
 U 1 1 5EE0825C
 P 8700 6150
 F 0 "#PWR?" H 8700 6000 50  0001 C CNN
@@ -368,7 +351,7 @@ $EndComp
 Wire Wire Line
 	8950 6150 8700 6150
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE095A7
 P 10000 6250
 F 0 "#PWR?" H 10000 6000 50  0001 C CNN
@@ -381,7 +364,7 @@ $EndComp
 Wire Wire Line
 	9650 6250 10000 6250
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE0A592
 P 11450 6000
 F 0 "#PWR?" H 11450 5850 50  0001 C CNN
@@ -392,7 +375,7 @@ F 3 "" H 11450 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE0B0E9
 P 11650 5600
 F 0 "#PWR?" H 11650 5350 50  0001 C CNN
@@ -418,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	11450 6000 11850 6000
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE0E4CC
 P 11500 7700
 F 0 "#PWR?" H 11500 7550 50  0001 C CNN
@@ -431,7 +414,7 @@ $EndComp
 Wire Wire Line
 	11800 7700 11500 7700
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE0F934
 P 10850 7800
 F 0 "#PWR?" H 10850 7550 50  0001 C CNN
@@ -444,7 +427,7 @@ $EndComp
 Wire Wire Line
 	10850 7800 11800 7800
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE10B59
 P 8500 8200
 F 0 "#PWR?" H 8500 8050 50  0001 C CNN
@@ -455,7 +438,7 @@ F 3 "" H 8500 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE113B3
 P 8750 8000
 F 0 "#PWR?" H 8750 7750 50  0001 C CNN
@@ -476,7 +459,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 8300 8900 8300
 $Comp
-L power:+3V3 #PWR?
+L MainElectronics-rescue:+3V3-power #PWR?
 U 1 1 5EE14000
 P 8300 10150
 F 0 "#PWR?" H 8300 10000 50  0001 C CNN
@@ -489,7 +472,7 @@ $EndComp
 Wire Wire Line
 	8300 10150 8650 10150
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE15824
 P 7800 10350
 F 0 "#PWR?" H 7800 10100 50  0001 C CNN
@@ -562,7 +545,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3050 6250 3050
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE9D355
 P 5100 4000
 F 0 "#PWR?" H 5100 3750 50  0001 C CNN
@@ -575,7 +558,7 @@ $EndComp
 Wire Wire Line
 	5100 4000 5100 3950
 $Comp
-L Device:R R?
+L MainElectronics-rescue:R-Device R?
 U 1 1 5EEA2232
 P 4950 3950
 F 0 "R?" V 4743 3950 50  0000 C CNN
@@ -610,7 +593,7 @@ Wire Wire Line
 	4750 3100 4750 3050
 Connection ~ 4750 3100
 $Comp
-L Device:R R?
+L MainElectronics-rescue:R-Device R?
 U 1 1 5EEA357F
 P 4600 3100
 F 0 "R?" V 4393 3100 50  0000 C CNN
@@ -623,7 +606,7 @@ $EndComp
 Wire Wire Line
 	4750 3150 4750 3100
 $Comp
-L power:GND #PWR?
+L MainElectronics-rescue:GND-power #PWR?
 U 1 1 5EE9D73F
 P 4750 3150
 F 0 "#PWR?" H 4750 2900 50  0001 C CNN
@@ -634,7 +617,7 @@ F 3 "" H 4750 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q?
+L MainElectronics-rescue:Q_NMOS_DGS-Device Q?
 U 1 1 5EE9639C
 P 5000 3700
 F 0 "Q?" H 5204 3746 50  0000 L CNN
@@ -645,7 +628,7 @@ F 3 "~" H 5000 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q?
+L MainElectronics-rescue:Q_NMOS_DGS-Device Q?
 U 1 1 5EE91588
 P 4650 2850
 F 0 "Q?" H 4854 2896 50  0000 L CNN
@@ -728,7 +711,7 @@ Wire Wire Line
 Wire Wire Line
 	11650 7900 11800 7900
 $Comp
-L Device:Antenna AE?
+L MainElectronics-rescue:Antenna-Device AE?
 U 1 1 5F3457FE
 P 13000 8300
 F 0 "AE?" H 13080 8289 50  0000 L CNN
@@ -761,4 +744,588 @@ NoConn ~ 9350 10550
 NoConn ~ 9350 10450
 NoConn ~ 9350 10350
 NoConn ~ 9350 10250
+$Comp
+L MainElectronicsLib:Teensy_4.0_Backside U?
+U 1 1 5F3ADD36
+P 14400 2650
+F 0 "U?" H 14400 3115 50  0000 C CNN
+F 1 "Teensy_4.0_Backside" H 14400 3024 50  0000 C CNN
+F 2 "" H 14400 2600 50  0001 C CNN
+F 3 "" H 14400 2600 50  0001 C CNN
+	1    14400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F3B5848
+P 14600 4900
+F 0 "U?" H 14600 5565 50  0000 C CNN
+F 1 "MAX14870_Breakout_1" H 14600 5474 50  0000 C CNN
+F 2 "" H 14600 4900 50  0001 C CNN
+F 3 "" H 14600 4900 50  0001 C CNN
+	1    14600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 4700 14250 4700
+Wire Wire Line
+	14000 4500 14250 4500
+Wire Wire Line
+	14000 4600 14250 4600
+Wire Wire Line
+	14000 4900 14250 4900
+Wire Wire Line
+	14000 4800 14250 4800
+Text Label 14000 4700 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F3F1DC5
+P 14000 5000
+F 0 "#PWR?" H 14000 4750 50  0001 C CNN
+F 1 "GND" H 14005 4827 50  0000 C CNN
+F 2 "" H 14000 5000 50  0001 C CNN
+F 3 "" H 14000 5000 50  0001 C CNN
+	1    14000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 4900 14000 5000
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F402AED
+P 15400 4800
+F 0 "#PWR?" H 15400 4650 50  0001 C CNN
+F 1 "+5V" H 15415 4973 50  0000 C CNN
+F 2 "" H 15400 4800 50  0001 C CNN
+F 3 "" H 15400 4800 50  0001 C CNN
+	1    15400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 4800 14950 4800
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F40BB77
+P 17150 4900
+F 0 "U?" H 17150 5565 50  0000 C CNN
+F 1 "MAX14870_Breakout_2" H 17150 5474 50  0000 C CNN
+F 2 "" H 17150 4900 50  0001 C CNN
+F 3 "" H 17150 4900 50  0001 C CNN
+	1    17150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16550 4700 16800 4700
+Wire Wire Line
+	16550 4500 16800 4500
+Wire Wire Line
+	16550 4600 16800 4600
+Wire Wire Line
+	16550 4900 16800 4900
+Wire Wire Line
+	16550 4800 16800 4800
+Text Label 16550 4700 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F40BB83
+P 16550 5000
+F 0 "#PWR?" H 16550 4750 50  0001 C CNN
+F 1 "GND" H 16555 4827 50  0000 C CNN
+F 2 "" H 16550 5000 50  0001 C CNN
+F 3 "" H 16550 5000 50  0001 C CNN
+	1    16550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16550 4900 16550 5000
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F40BB8A
+P 17950 4800
+F 0 "#PWR?" H 17950 4650 50  0001 C CNN
+F 1 "+5V" H 17965 4973 50  0000 C CNN
+F 2 "" H 17950 4800 50  0001 C CNN
+F 3 "" H 17950 4800 50  0001 C CNN
+	1    17950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17950 4800 17500 4800
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F410CF3
+P 14600 6000
+F 0 "U?" H 14600 6665 50  0000 C CNN
+F 1 "MAX14870_Breakout_3" H 14600 6574 50  0000 C CNN
+F 2 "" H 14600 6000 50  0001 C CNN
+F 3 "" H 14600 6000 50  0001 C CNN
+	1    14600 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 5800 14250 5800
+Wire Wire Line
+	14000 5600 14250 5600
+Wire Wire Line
+	14000 5700 14250 5700
+Wire Wire Line
+	14000 6000 14250 6000
+Wire Wire Line
+	14000 5900 14250 5900
+Text Label 14000 5800 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F410CFF
+P 14000 6100
+F 0 "#PWR?" H 14000 5850 50  0001 C CNN
+F 1 "GND" H 14005 5927 50  0000 C CNN
+F 2 "" H 14000 6100 50  0001 C CNN
+F 3 "" H 14000 6100 50  0001 C CNN
+	1    14000 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 6000 14000 6100
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F410D06
+P 15400 5900
+F 0 "#PWR?" H 15400 5750 50  0001 C CNN
+F 1 "+5V" H 15415 6073 50  0000 C CNN
+F 2 "" H 15400 5900 50  0001 C CNN
+F 3 "" H 15400 5900 50  0001 C CNN
+	1    15400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 5900 14950 5900
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F416A0F
+P 17150 6000
+F 0 "U?" H 17150 6665 50  0000 C CNN
+F 1 "MAX14870_Breakout_4" H 17150 6574 50  0000 C CNN
+F 2 "" H 17150 6000 50  0001 C CNN
+F 3 "" H 17150 6000 50  0001 C CNN
+	1    17150 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16550 5800 16800 5800
+Wire Wire Line
+	16550 5600 16800 5600
+Wire Wire Line
+	16550 5700 16800 5700
+Wire Wire Line
+	16550 6000 16800 6000
+Wire Wire Line
+	16550 5900 16800 5900
+Text Label 16550 5800 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F416A1B
+P 17950 6100
+F 0 "#PWR?" H 17950 5850 50  0001 C CNN
+F 1 "GND" H 17955 5927 50  0000 C CNN
+F 2 "" H 17950 6100 50  0001 C CNN
+F 3 "" H 17950 6100 50  0001 C CNN
+	1    17950 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17950 6000 17950 6100
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F416A22
+P 17950 5900
+F 0 "#PWR?" H 17950 5750 50  0001 C CNN
+F 1 "+5V" H 17965 6073 50  0000 C CNN
+F 2 "" H 17950 5900 50  0001 C CNN
+F 3 "" H 17950 5900 50  0001 C CNN
+	1    17950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17950 5900 17500 5900
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F440291
+P 17950 5050
+F 0 "#PWR?" H 17950 4800 50  0001 C CNN
+F 1 "GND" H 17955 4877 50  0000 C CNN
+F 2 "" H 17950 5050 50  0001 C CNN
+F 3 "" H 17950 5050 50  0001 C CNN
+	1    17950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17500 6000 17950 6000
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F44BCE9
+P 15400 6100
+F 0 "#PWR?" H 15400 5850 50  0001 C CNN
+F 1 "GND" H 15405 5927 50  0000 C CNN
+F 2 "" H 15400 6100 50  0001 C CNN
+F 3 "" H 15400 6100 50  0001 C CNN
+	1    15400 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 6000 15400 6100
+Wire Wire Line
+	14950 6000 15400 6000
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F45185B
+P 15400 5000
+F 0 "#PWR?" H 15400 4750 50  0001 C CNN
+F 1 "GND" H 15405 4827 50  0000 C CNN
+F 2 "" H 15400 5000 50  0001 C CNN
+F 3 "" H 15400 5000 50  0001 C CNN
+	1    15400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 4900 15400 5000
+Wire Wire Line
+	14950 4900 15400 4900
+Wire Wire Line
+	17500 4900 17950 4900
+Wire Wire Line
+	17950 4900 17950 5050
+Wire Wire Line
+	9450 2700 9750 2700
+Wire Wire Line
+	9750 2600 9450 2600
+Text Label 9450 2600 2    50   ~ 0
+MAX14870_Breakout_1_PWM
+Wire Wire Line
+	9450 2900 9750 2900
+Wire Wire Line
+	9450 3000 9750 3000
+Wire Wire Line
+	10850 2300 11050 2300
+Wire Wire Line
+	10850 2400 11050 2400
+Wire Wire Line
+	11050 2500 10850 2500
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F4EFE54
+P 12450 2250
+F 0 "#PWR?" H 12450 2000 50  0001 C CNN
+F 1 "GND" H 12455 2077 50  0000 C CNN
+F 2 "" H 12450 2250 50  0001 C CNN
+F 3 "" H 12450 2250 50  0001 C CNN
+	1    12450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 2200 12450 2250
+Wire Wire Line
+	10850 2200 12450 2200
+Wire Wire Line
+	10850 2100 12150 2100
+Wire Wire Line
+	14750 2450 14950 2450
+Wire Wire Line
+	14750 2550 14950 2550
+Wire Wire Line
+	14950 2650 14750 2650
+Wire Wire Line
+	13850 2450 14050 2450
+Wire Wire Line
+	13850 2550 14050 2550
+Wire Wire Line
+	14050 2650 13850 2650
+Text Label 11050 2500 0    50   ~ 0
+MAX14870_Breakout_4_DIR
+Wire Wire Line
+	9450 2800 9750 2800
+Text Label 9450 2800 2    50   ~ 0
+MAX14870_Breakout_1_DIR
+Text Label 9450 2900 2    50   ~ 0
+MAX14870_Breakout_2_DIR
+Text Label 9450 3000 2    50   ~ 0
+MAX14870_Breakout_3_PWM
+Text Label 11050 2300 0    50   ~ 0
+MAX14870_Breakout_3_DIR
+Text Label 9450 2700 2    50   ~ 0
+MAX14870_Breakout_2_PWM
+Text Label 11050 2400 0    50   ~ 0
+MAX14870_Breakout_4_PWM
+Wire Wire Line
+	13850 2750 14050 2750
+Wire Wire Line
+	13850 2850 14050 2850
+Wire Wire Line
+	14950 2750 14750 2750
+Wire Wire Line
+	14950 2850 14750 2850
+Text Label 13850 2450 2    50   ~ 0
+MAX14870_Breakout_5_PWM
+Text Label 13850 2550 2    50   ~ 0
+MAX14870_Breakout_5_DIR
+Text Label 13850 2750 2    50   ~ 0
+MAX14870_Breakout_6_DIR
+Text Label 13850 2650 2    50   ~ 0
+MAX14870_Breakout_6_PWM
+Text Label 14950 2450 0    50   ~ 0
+MAX14870_Breakout_7_DIR
+Text Label 14950 2550 0    50   ~ 0
+MAX14870_Breakout_7_PWM
+Text Label 14950 2650 0    50   ~ 0
+MAX14870_Breakout_8_DIR
+Text Label 14950 2750 0    50   ~ 0
+MAX14870_Breakout_8_PWM
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F4631D8
+P 14650 6950
+F 0 "U?" H 14650 7615 50  0000 C CNN
+F 1 "MAX14870_Breakout_5" H 14650 7524 50  0000 C CNN
+F 2 "" H 14650 6950 50  0001 C CNN
+F 3 "" H 14650 6950 50  0001 C CNN
+	1    14650 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 6750 14300 6750
+Wire Wire Line
+	14050 6550 14300 6550
+Wire Wire Line
+	14050 6650 14300 6650
+Wire Wire Line
+	14050 6950 14300 6950
+Wire Wire Line
+	14050 6850 14300 6850
+Text Label 14050 6750 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F4631E4
+P 14050 7050
+F 0 "#PWR?" H 14050 6800 50  0001 C CNN
+F 1 "GND" H 14055 6877 50  0000 C CNN
+F 2 "" H 14050 7050 50  0001 C CNN
+F 3 "" H 14050 7050 50  0001 C CNN
+	1    14050 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 6950 14050 7050
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F4631EB
+P 15450 6850
+F 0 "#PWR?" H 15450 6700 50  0001 C CNN
+F 1 "+5V" H 15465 7023 50  0000 C CNN
+F 2 "" H 15450 6850 50  0001 C CNN
+F 3 "" H 15450 6850 50  0001 C CNN
+	1    15450 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 6850 15000 6850
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F4631F2
+P 17200 6950
+F 0 "U?" H 17200 7615 50  0000 C CNN
+F 1 "MAX14870_Breakout_6" H 17200 7524 50  0000 C CNN
+F 2 "" H 17200 6950 50  0001 C CNN
+F 3 "" H 17200 6950 50  0001 C CNN
+	1    17200 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 6750 16850 6750
+Wire Wire Line
+	16600 6550 16850 6550
+Wire Wire Line
+	16600 6650 16850 6650
+Wire Wire Line
+	16600 6950 16850 6950
+Wire Wire Line
+	16600 6850 16850 6850
+Text Label 16600 6750 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F4631FE
+P 16600 7050
+F 0 "#PWR?" H 16600 6800 50  0001 C CNN
+F 1 "GND" H 16605 6877 50  0000 C CNN
+F 2 "" H 16600 7050 50  0001 C CNN
+F 3 "" H 16600 7050 50  0001 C CNN
+	1    16600 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 6950 16600 7050
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F463205
+P 18000 6850
+F 0 "#PWR?" H 18000 6700 50  0001 C CNN
+F 1 "+5V" H 18015 7023 50  0000 C CNN
+F 2 "" H 18000 6850 50  0001 C CNN
+F 3 "" H 18000 6850 50  0001 C CNN
+	1    18000 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 6850 17550 6850
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F46320C
+P 14650 8050
+F 0 "U?" H 14650 8715 50  0000 C CNN
+F 1 "MAX14870_Breakout_7" H 14650 8624 50  0000 C CNN
+F 2 "" H 14650 8050 50  0001 C CNN
+F 3 "" H 14650 8050 50  0001 C CNN
+	1    14650 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 7850 14300 7850
+Wire Wire Line
+	14050 7650 14300 7650
+Wire Wire Line
+	14050 7750 14300 7750
+Wire Wire Line
+	14050 8050 14300 8050
+Wire Wire Line
+	14050 7950 14300 7950
+Text Label 14050 7850 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F463218
+P 14050 8150
+F 0 "#PWR?" H 14050 7900 50  0001 C CNN
+F 1 "GND" H 14055 7977 50  0000 C CNN
+F 2 "" H 14050 8150 50  0001 C CNN
+F 3 "" H 14050 8150 50  0001 C CNN
+	1    14050 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 8050 14050 8150
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F46321F
+P 15450 7950
+F 0 "#PWR?" H 15450 7800 50  0001 C CNN
+F 1 "+5V" H 15465 8123 50  0000 C CNN
+F 2 "" H 15450 7950 50  0001 C CNN
+F 3 "" H 15450 7950 50  0001 C CNN
+	1    15450 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 7950 15000 7950
+$Comp
+L MainElectronicsLib:MAX14870_Breakout U?
+U 1 1 5F463226
+P 17200 8050
+F 0 "U?" H 17200 8715 50  0000 C CNN
+F 1 "MAX14870_Breakout_8" H 17200 8624 50  0000 C CNN
+F 2 "" H 17200 8050 50  0001 C CNN
+F 3 "" H 17200 8050 50  0001 C CNN
+	1    17200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 7850 16850 7850
+Wire Wire Line
+	16600 7650 16850 7650
+Wire Wire Line
+	16600 7750 16850 7750
+Wire Wire Line
+	16600 8050 16850 8050
+Wire Wire Line
+	16600 7950 16850 7950
+Text Label 16600 7850 2    50   ~ 0
+Teensy_4.0_P4
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F463232
+P 18000 8150
+F 0 "#PWR?" H 18000 7900 50  0001 C CNN
+F 1 "GND" H 18005 7977 50  0000 C CNN
+F 2 "" H 18000 8150 50  0001 C CNN
+F 3 "" H 18000 8150 50  0001 C CNN
+	1    18000 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 8050 18000 8150
+$Comp
+L MainElectronics-rescue:+5V-power #PWR?
+U 1 1 5F463239
+P 18000 7950
+F 0 "#PWR?" H 18000 7800 50  0001 C CNN
+F 1 "+5V" H 18015 8123 50  0000 C CNN
+F 2 "" H 18000 7950 50  0001 C CNN
+F 3 "" H 18000 7950 50  0001 C CNN
+	1    18000 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 7950 17550 7950
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F463240
+P 18000 7100
+F 0 "#PWR?" H 18000 6850 50  0001 C CNN
+F 1 "GND" H 18005 6927 50  0000 C CNN
+F 2 "" H 18000 7100 50  0001 C CNN
+F 3 "" H 18000 7100 50  0001 C CNN
+	1    18000 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17550 8050 18000 8050
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F463247
+P 15450 8150
+F 0 "#PWR?" H 15450 7900 50  0001 C CNN
+F 1 "GND" H 15455 7977 50  0000 C CNN
+F 2 "" H 15450 8150 50  0001 C CNN
+F 3 "" H 15450 8150 50  0001 C CNN
+	1    15450 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 8050 15450 8150
+Wire Wire Line
+	15000 8050 15450 8050
+$Comp
+L MainElectronics-rescue:GND-power #PWR?
+U 1 1 5F46324F
+P 15450 7050
+F 0 "#PWR?" H 15450 6800 50  0001 C CNN
+F 1 "GND" H 15455 6877 50  0000 C CNN
+F 2 "" H 15450 7050 50  0001 C CNN
+F 3 "" H 15450 7050 50  0001 C CNN
+	1    15450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 6950 15450 7050
+Wire Wire Line
+	15000 6950 15450 6950
+Wire Wire Line
+	17550 6950 18000 6950
+Wire Wire Line
+	18000 6950 18000 7100
+Text Label 13850 2850 2    50   ~ 0
+MAX14870_Breakout_Fault
 $EndSCHEMATC
