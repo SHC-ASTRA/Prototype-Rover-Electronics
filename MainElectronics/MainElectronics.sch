@@ -650,20 +650,14 @@ Text Label 7650 6550 2    50   ~ 0
 Teensy_SCL0
 Text Label 7650 6450 2    50   ~ 0
 Teensy_SDA0
-Text Label 7650 8600 2    50   ~ 0
-Teensy_SCL0
 Wire Wire Line
 	7650 8600 7800 8600
-Text Label 7650 8500 2    50   ~ 0
-Teensy_SDA0
 Wire Wire Line
 	7650 8500 7800 8500
 Text Label 7650 8700 2    50   ~ 0
 BNO055_RST
 Wire Wire Line
 	7650 8700 7800 8700
-Text Label 3900 10050 0    50   ~ 0
-BNO055_RST
 Wire Wire Line
 	3900 10050 3700 10050
 Text Label 2300 10150 2    50   ~ 0
@@ -1601,4 +1595,20 @@ Wire Wire Line
 	3350 2250 4000 2250
 Wire Wire Line
 	3350 2350 4000 2350
+Text Label 1650 3250 2    50   ~ 0
+NX_I2C0_SDA
+Text Label 3750 3250 0    50   ~ 0
+NX_I2C0_SCL
+Wire Wire Line
+	3750 3250 3350 3250
+Wire Wire Line
+	2150 3250 1650 3250
+Text Label 7650 8600 2    50   ~ 0
+NX_I2C0_SCL
+Text Label 7650 8500 2    50   ~ 0
+NX_I2C0_SDA
+Text Label 1650 3350 2    50   ~ 0
+BNO055_RST
+Wire Wire Line
+	1650 3350 2150 3350
 $EndSCHEMATC
