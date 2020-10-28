@@ -534,14 +534,10 @@ Text Label 2300 9150 2    50   ~ 0
 Teensy_RX1
 Text Label 2300 9250 2    50   ~ 0
 Teensy_TX1
-Text Label 3350 5700 2    50   ~ 0
+Text Label 4000 2250 0    50   ~ 0
 Teensy_RX1
-Text Label 3350 5600 2    50   ~ 0
+Text Label 4000 2350 0    50   ~ 0
 Teensy_TX1
-Wire Wire Line
-	3350 5600 3600 5600
-Wire Wire Line
-	3600 5700 3350 5700
 Wire Wire Line
 	3600 6100 2100 6100
 Wire Wire Line
@@ -584,7 +580,7 @@ Wire Wire Line
 	2150 7250 2150 7150
 Text Label 1950 7250 2    50   ~ 0
 NX_SleepWake
-Text Label 4250 2950 2    50   ~ 0
+Text Label 1600 6400 2    50   ~ 0
 NX_Reset
 Wire Wire Line
 	1800 6400 1800 6550
@@ -1601,4 +1597,8 @@ Wire Wire Line
 Connection ~ 9250 1350
 Wire Wire Line
 	9250 1350 9250 1500
+Wire Wire Line
+	3350 2250 4000 2250
+Wire Wire Line
+	3350 2350 4000 2350
 $EndSCHEMATC
