@@ -134,33 +134,11 @@ F 3 "" H 3150 9700 50  0001 C CNN
 	1    3150 9700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5EDED200
-P 8650 1600
-F 0 "J3" H 8568 1275 50  0000 C CNN
-F 1 "Jetson_DC_In" H 8568 1366 50  0000 C CNN
-F 2 "" H 8650 1600 50  0001 C CNN
-F 3 "~" H 8650 1600 50  0001 C CNN
-	1    8650 1600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9250 1500 8850 1500
-Wire Wire Line
-	8850 1600 9250 1600
-Wire Wire Line
-	9250 1600 9250 1650
-Wire Wire Line
-	9250 1650 9550 1650
 Wire Wire Line
 	9550 900  9250 900 
 Wire Wire Line
 	9700 900  9550 900 
 Connection ~ 9550 900 
-Wire Wire Line
-	10200 1650 9550 1650
-Connection ~ 9550 1650
 $Comp
 L power:+5V #PWR09
 U 1 1 5EDF08DE
@@ -841,7 +819,6 @@ F 3 "" H 9250 1650 50  0001 C CNN
 	1    9250 1650
 	1    0    0    -1  
 $EndComp
-Connection ~ 9250 1650
 NoConn ~ 15850 1750
 NoConn ~ 15150 2050
 $Comp
@@ -1568,8 +1545,6 @@ Wire Wire Line
 Wire Wire Line
 	9700 1000 9550 1000
 Wire Wire Line
-	9550 1000 9550 1650
-Wire Wire Line
 	9250 900  9250 1350
 $Comp
 L Device:R R?
@@ -1588,9 +1563,6 @@ Wire Wire Line
 	10100 1000 10100 1350
 Wire Wire Line
 	9700 1350 9250 1350
-Connection ~ 9250 1350
-Wire Wire Line
-	9250 1350 9250 1500
 Wire Wire Line
 	3350 2250 4000 2250
 Wire Wire Line
@@ -1611,4 +1583,86 @@ Text Label 1650 3350 2    50   ~ 0
 BNO055_RST
 Wire Wire Line
 	1650 3350 2150 3350
+Text Label 3900 10050 0    50   ~ 0
+BAT_V_SENS
+Text Label 7850 1150 2    50   ~ 0
+BAT_V_SENS
+$Comp
+L Device:R_Small R?
+U 1 1 5FA0E42F
+P 8050 1000
+F 0 "R?" H 8109 1046 50  0000 L CNN
+F 1 "10k" H 8109 955 50  0000 L CNN
+F 2 "" H 8050 1000 50  0001 C CNN
+F 3 "~" H 8050 1000 50  0001 C CNN
+	1    8050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA0ED9A
+P 8050 1300
+F 0 "R?" H 8109 1346 50  0000 L CNN
+F 1 "1k" H 8109 1255 50  0000 L CNN
+F 2 "" H 8050 1300 50  0001 C CNN
+F 3 "~" H 8050 1300 50  0001 C CNN
+	1    8050 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1150 8050 1150
+Wire Wire Line
+	8050 1150 8050 1200
+Wire Wire Line
+	8050 1150 8050 1100
+Connection ~ 8050 1150
+Connection ~ 9250 900 
+Wire Wire Line
+	8050 900  9250 900 
+$Comp
+L power:GND #PWR?
+U 1 1 5FA6E22C
+P 8050 1400
+F 0 "#PWR?" H 8050 1150 50  0001 C CNN
+F 1 "GND" H 8055 1227 50  0000 C CNN
+F 2 "" H 8050 1400 50  0001 C CNN
+F 3 "" H 8050 1400 50  0001 C CNN
+	1    8050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FA6FEF4
+P 11050 1550
+F 0 "J?" H 10968 1225 50  0000 C CNN
+F 1 "Jetson_DC_In" H 10968 1316 50  0000 C CNN
+F 2 "" H 11050 1550 50  0001 C CNN
+F 3 "~" H 11050 1550 50  0001 C CNN
+	1    11050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 1550 10850 900 
+Wire Wire Line
+	10850 900  10200 900 
+Connection ~ 10200 900 
+Wire Wire Line
+	10200 1650 10850 1650
+Connection ~ 10200 1650
+Wire Wire Line
+	9250 1650 9550 1650
+Connection ~ 9550 1650
+Wire Wire Line
+	9550 1650 10200 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5FAAB195
+P 9550 1000
+F 0 "#PWR?" H 9550 750 50  0001 C CNN
+F 1 "GND" H 9555 827 50  0000 C CNN
+F 2 "" H 9550 1000 50  0001 C CNN
+F 3 "" H 9550 1000 50  0001 C CNN
+	1    9550 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
