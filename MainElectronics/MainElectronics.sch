@@ -467,13 +467,7 @@ $EndComp
 Wire Wire Line
 	7800 8400 6950 8400
 Wire Wire Line
-	11000 4150 10600 4150
-Wire Wire Line
 	11000 4250 10600 4250
-Text Label 10600 4150 2    50   ~ 0
-Teensy_RX5
-Text Label 10600 4250 2    50   ~ 0
-Teensy_TX5
 Text Label 3900 9550 0    50   ~ 0
 Teensy_RX5
 Wire Wire Line
@@ -1665,4 +1659,15 @@ F 3 "" H 9550 1000 50  0001 C CNN
 	1    9550 1000
 	1    0    0    -1  
 $EndComp
+Text Label 3450 5700 2    50   ~ 0
+Teensy_RX5
+Text Label 3450 5600 2    50   ~ 0
+Teensy_TX5
+Wire Wire Line
+	3450 5700 3600 5700
+Wire Wire Line
+	3450 5600 3600 5600
+Text Label 10600 4250 2    50   ~ 0
+Teensy_TX1
+NoConn ~ 11000 4150
 $EndSCHEMATC
